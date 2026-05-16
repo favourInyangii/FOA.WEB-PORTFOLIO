@@ -1,3 +1,4 @@
+"use client"
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React, {useRef} from 'react'
@@ -12,8 +13,8 @@ const Navbar = () => {
   }
   return (
     <>
-      <div className='fixed top-0  right-0 w-11/12 -z-10 translate-y-[-80%]'>
-        <Image src={assets.header_bg_color} alt='' className='w-full' />
+      <div className='fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]'>
+        <Image src={assets.header_bg_color} alt='' className='w-full' loading="eager" />
       </div>
       
       <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 bg-white'>
